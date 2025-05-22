@@ -40,9 +40,9 @@
 
 ## MVP-tavoitteet
 
-- [x] Kulujen lisääminen
-- [x] Kulujen poisto ja päivitys
-- [x] Tietokantarakenne EF Corella
+- [] Kulujen lisääminen
+- [] Kulujen poisto ja päivitys
+- [] Tietokantarakenne EF Corella
 - [ ] Token-autentikointi
 - [ ] Käyttäjätunnusten luominen
 - [ ] Sisäänkirjautuminen ja uloskirjautuminen

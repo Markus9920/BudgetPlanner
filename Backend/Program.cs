@@ -7,7 +7,7 @@ using BudgetPlanner.Backend.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite("Data Source=database.db"));
+    options.UseSqlite("Data Source=Database/database.db"));
 
 // Add services to the container.
 
