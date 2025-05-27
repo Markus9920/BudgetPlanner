@@ -1,5 +1,8 @@
 # BudgetPlanner
 
+AI used for brainstorming, planning and teaching.
+
+
 ## Tietokanta (vaihe 1)
 
 ### Taulu: Expenses
@@ -39,7 +42,7 @@
 
 ---
 
-## MVP-tavoitteet
+## Tavoitteet
 
 Kulujen lisääminen
 Kulujen poisto ja päivitys
@@ -55,14 +58,5 @@ Mahdollisuus syöttää kuukausitulot
 
 ---
 
-## Suunnitteluperiaate
-
-- Alkuvaiheessa keskitytään kulujen hallintaan
-- Käyttäjät lisätään myöhemmässä vaiheessa
-- Rakennetaan ensin vahva tietokantarakenne
-- Enum-arvot kuten RecurringType ja Category tallennetaan tauluihin integer-arvoina, ja muutetaan tekstiksi haettaessa
-- LastOccurrDate-taulu sisältää toistuvan kulun viimeisimmän tapahtuman, jonka perusteella lasketaan seuraava maksupäivä
-
----
 
 © Markus Wahlroos 2025
