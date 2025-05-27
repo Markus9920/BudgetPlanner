@@ -41,30 +41,21 @@ AI used for brainstorming, planning and teaching.
 
 ---
 
-## MVP-tavoitteet
+## Tavoitteet
 
-- [] Kulujen lisääminen
-- [] Kulujen poisto ja päivitys
-- [] Tietokantarakenne EF Corella
-- [ ] Token-autentikointi
-- [ ] Käyttäjätunnusten luominen
-- [ ] Sisäänkirjautuminen ja uloskirjautuminen
-- [ ] Toistuvien kulujen kasittely automaattisesti
-- [ ] Maksutilan merkintä (IsPaid)
-- [ ] Kulujen lajittelu ja suodatus (maksamattomat, toistuvat, jne)
-- [ ] Kuukausittainen yhteenveto
-- [ ] Mahdollisuus syöttää kuukausitulot
-
----
-
-## Suunnitteluperiaate
-
-- Alkuvaiheessa keskitytään kulujen hallintaan
-- Käyttäjät lisätään myöhemmässä vaiheessa
-- Rakennetaan ensin vahva tietokantarakenne
-- Enum-arvot kuten RecurringType ja Category tallennetaan tauluihin integer-arvoina, ja muutetaan tekstiksi haettaessa
-- LastOccurrDate-taulu sisältää toistuvan kulun viimeisimmän tapahtuman, jonka perusteella lasketaan seuraava maksupäivä
+Kulujen lisääminen
+Kulujen poisto ja päivitys
+Tietokantarakenne EF Corella
+Token-autentikointi
+Käyttäjätunnusten luominen
+Sisäänkirjautuminen ja uloskirjautuminen
+Toistuvien kulujen kasittely automaattisesti
+Maksutilan merkintä (IsPaid)
+Kulujen lajittelu ja suodatus (maksamattomat, toistuvat, jne)
+Kuukausittainen yhteenveto
+Mahdollisuus syöttää kuukausitulot
 
 ---
+
 
 © Markus Wahlroos 2025
