@@ -43,7 +43,7 @@ AI used for brainstorming, planning and teaching.
 
 ## Tavoitteet
 
-Kulujen lisääminen
+Kulujen lisääminen <br>
 Kulujen poisto ja päivitys
 Tietokantarakenne EF Corella
 Token-autentikointi
