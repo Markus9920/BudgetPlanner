@@ -7,6 +7,7 @@
 | Sarake        | Tyyppi     | Kuvaus                         |
 |---------------|------------|--------------------------------|
 | ExpenseId     | int        | Pääavain                      |
+| UserId        | int        | Vierasavain                   |
 | Description   | string     | Selite                        |
 | Cost          | decimal    | Hinta                         |
 | ExpenseDate   | datetime   | Päivämäärä                    |
@@ -40,17 +41,17 @@
 
 ## MVP-tavoitteet
 
-- [] Kulujen lisääminen
-- [] Kulujen poisto ja päivitys
-- [] Tietokantarakenne EF Corella
-- [ ] Token-autentikointi
-- [ ] Käyttäjätunnusten luominen
-- [ ] Sisäänkirjautuminen ja uloskirjautuminen
-- [ ] Toistuvien kulujen kasittely automaattisesti
-- [ ] Maksutilan merkintä (IsPaid)
-- [ ] Kulujen lajittelu ja suodatus (maksamattomat, toistuvat, jne)
-- [ ] Kuukausittainen yhteenveto
-- [ ] Mahdollisuus syöttää kuukausitulot
+Kulujen lisääminen
+Kulujen poisto ja päivitys
+Tietokantarakenne EF Corella
+Token-autentikointi
+Käyttäjätunnusten luominen
+Sisäänkirjautuminen ja uloskirjautuminen
+Toistuvien kulujen kasittely automaattisesti
+Maksutilan merkintä (IsPaid)
+Kulujen lajittelu ja suodatus (maksamattomat, toistuvat, jne)
+Kuukausittainen yhteenveto
+Mahdollisuus syöttää kuukausitulot
 
 ---
 
