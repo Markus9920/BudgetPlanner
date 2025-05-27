@@ -1,5 +1,8 @@
 # BudgetPlanner
 
+AI used for brainstorming, planning and teaching.
+
+
 ## Tietokanta (vaihe 1)
 
 ### Taulu: Expenses
