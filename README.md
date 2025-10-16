@@ -42,12 +42,12 @@ AI used for brainstorming, planning and teaching.
 
 ---
 
-## Tavoitteet
-
+## TODO / ajatukset
 Kulujen lisääminen<br>
 Kulujen poisto ja päivitys<br>
 Tietokantarakenne EF Corella<br>
 Token-autentikointi<br>
+Middleware, jolla katsotaan onko käyttäjä vielä aktiivien?<br>
 Käyttäjätunnusten luominen<br>
 Sisäänkirjautuminen ja uloskirjautuminen<br>
 Toistuvien kulujen kasittely automaattisesti<br>
