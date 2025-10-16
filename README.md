@@ -49,6 +49,7 @@ Tietokantarakenne EF Corella<br>
 Token-autentikointi<br>
 Middleware, jolla katsotaan onko käyttäjä vielä aktiivien?<br>
 Käyttäjätunnusten luominen<br>
+Käyttätilin poistaminen<br>
 Sisäänkirjautuminen ja uloskirjautuminen<br>
 Toistuvien kulujen kasittely automaattisesti<br>
 Maksutilan merkintä (IsPaid)<br>
