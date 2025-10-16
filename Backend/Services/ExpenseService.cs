@@ -25,7 +25,7 @@ namespace BudgetPlanner.Backend.Service
               
         }
 
-        public async Task UpdateExpense(UpdateExpenseDto dto)
+        public async Task UpdateExpense(NewExpenseDto dto)
         {
             
         }

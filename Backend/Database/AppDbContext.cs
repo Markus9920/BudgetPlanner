@@ -31,7 +31,6 @@ namespace BudgetPlanner.Backend.Database
         public DbSet<Category> Categories { get; set; }
         public DbSet<Expense> Expenses { get; set; }
         public DbSet<LastOccurrDate> LastOccurrDates { get; set; }
-        public DbSet<RecurrType> RecurringTypes { get; set; }
         public DbSet<User> Users { get; set; }
 
 

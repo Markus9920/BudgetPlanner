@@ -16,7 +16,7 @@ namespace BudgetPlanner.Backend.Models
         public string? Description { get; set; }
         public decimal Cost { get; set; }
         public DateTime ExpirationDate { get; set; }
-
+        public DateTime CreationDate { get; set; } = DateTime.UtcNow;
 
         public int UserId { get; set; }
         public bool IsPaid { get; set; }
@@ -26,14 +26,14 @@ namespace BudgetPlanner.Backend.Models
         public int? CategoryId { get; set; }
         public Category? Category { get; set; }
 
-        //Recurremce type. No null
-        public int RecurrTypeId { get; set; }
+        //Recurrence type. No null
+        public RecurrenceType RecurrType { get; set; }
         public Expense() // For EF Core
         {
             Description = string.Empty;     
         } 
 
-        public Expense(string description, decimal cost, DateTime expDate, int userId, int categoryId, int recurrTypeId)
+        public Expense(string description, decimal cost, DateTime expDate, int userId, int categoryId, RecurrenceType recurrenceType)
         {
             Description = description;
             UserId = userId;
@@ -41,7 +41,7 @@ namespace BudgetPlanner.Backend.Models
             Cost = cost;
             ExpirationDate = expDate;
             CategoryId = categoryId;
-            RecurrTypeId = recurrTypeId;
+            RecurrType = recurrenceType;
         }
     }
 }

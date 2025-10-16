@@ -13,9 +13,9 @@ namespace BudgetPlanner.Backend.Services
         {
             _context = context;
         }
-        public async Task CreateUser(User user)
+        public async Task CreateUser()
         {
-            await _context.Users.AddAsync(user);
+            await _context.Users.AddAsync(); //pitää käyttää DTO
             await _context.SaveChangesAsync();
         }
         public async Task DeleteUser(User user)

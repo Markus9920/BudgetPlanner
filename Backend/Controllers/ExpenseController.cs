@@ -10,14 +10,13 @@ namespace BudgetPlanner.Backend.Controllers
     public class ExpenseController : ControllerBase
     {
         private readonly ExpenseService _expenseService;
-
         public ExpenseController(ExpenseService expenseService)
         {
             _expenseService = expenseService;
         }
 
-        [HttpPost("add")]
-        public async Task<IActionResult> AddExpense(Expense expense)
+        [HttpPost("add-expense")]
+        public async Task<IActionResult> AddExpense(Expense expense) // pitää käyttää DTO
         {
             await _expenseService.AddExpense(expense);
             return Ok("Lisäys onnistui!");

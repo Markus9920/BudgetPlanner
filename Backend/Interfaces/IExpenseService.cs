@@ -9,7 +9,7 @@ namespace BudgetPlanner.Backend.Interfaces
     {
         Task AddExpense(Expense expense);
         Task DeleteExpense(int  expenseId);
-        Task UpdateExpense(UpdateExpenseDto dto);
+        Task UpdateExpense(NewExpenseDto dto);
         Task SetPaid(int expenseId);
         Task SetUnpaid(int expenseId);
 
