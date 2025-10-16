@@ -44,16 +44,16 @@ AI used for brainstorming, planning and teaching.
 
 ## Tavoitteet
 
-Kulujen lisääminen
-Kulujen poisto ja päivitys
-Tietokantarakenne EF Corella
-Token-autentikointi
-Käyttäjätunnusten luominen
-Sisäänkirjautuminen ja uloskirjautuminen
-Toistuvien kulujen kasittely automaattisesti
-Maksutilan merkintä (IsPaid)
-Kulujen lajittelu ja suodatus (maksamattomat, toistuvat, jne)
-Kuukausittainen yhteenveto
+Kulujen lisääminen<br>
+Kulujen poisto ja päivitys<br>
+Tietokantarakenne EF Corella<br>
+Token-autentikointi<br>
+Käyttäjätunnusten luominen<br>
+Sisäänkirjautuminen ja uloskirjautuminen<br>
+Toistuvien kulujen kasittely automaattisesti<br>
+Maksutilan merkintä (IsPaid)<br>
+Kulujen lajittelu ja suodatus (maksamattomat, toistuvat, jne)<br>
+Kuukausittainen yhteenveto<br>
 Mahdollisuus syöttää kuukausitulot
 
 ---
