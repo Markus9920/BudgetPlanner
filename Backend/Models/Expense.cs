@@ -19,7 +19,7 @@ namespace BudgetPlanner.Backend.Models
 
 
         public int UserId { get; set; }
-        public bool Ispaid { get; set; }
+        public bool IsPaid { get; set; }
         public User? User { get; set; }
 
         //category enum. Can be null
@@ -37,7 +37,7 @@ namespace BudgetPlanner.Backend.Models
         {
             Description = description;
             UserId = userId;
-            Ispaid = false;
+            IsPaid = false;
             Cost = cost;
             ExpirationDate = expDate;
             CategoryId = categoryId;

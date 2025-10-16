@@ -1,23 +1,23 @@
 
-using BudgetPlanner.Backend.Models;
 using BudgetPlanner.Backend.Dtos;
+using BudgetPlanner.Backend.Models;
+using System.Threading.Tasks;
 
 namespace BudgetPlanner.Backend.Interfaces
 {
-
     public interface IExpenseService
     {
-        void AddExpense(Expense expense);
-        void DeleteExpense(int  expenseId);
-        void UpdateExpense(UpdateExpenseDto dto);
-        void SetPaid(int expenseId);
-        void SetUnpaid(int expenseId);
+        Task AddExpense(Expense expense);
+        Task DeleteExpense(int  expenseId);
+        Task UpdateExpense(UpdateExpenseDto dto);
+        Task SetPaid(int expenseId);
+        Task SetUnpaid(int expenseId);
 
-        IEnumerable<Expense> GetAllExpenses(int userId);
-        IEnumerable<Expense> GetPaidExpenses(int userId);
-        IEnumerable<Expense> GetUnpaidExpenses(int userId);
-        IEnumerable<Expense> GetRecurringExpenses(int userId);
-        IEnumerable<Expense> GetNonRecurringExpenses(int userId);
+        public IEnumerable<Expense> GetAllExpenses(int userId);
+        public IEnumerable<Expense> GetPaidExpenses(int userId);
+        public IEnumerable<Expense> GetUnpaidExpenses(int userId);
+        public IEnumerable<Expense> GetRecurringExpenses(int userId);
+        public IEnumerable<Expense> GetNonRecurringExpenses(int userId);
 
     }
 }

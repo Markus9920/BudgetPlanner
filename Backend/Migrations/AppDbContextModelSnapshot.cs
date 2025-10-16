@@ -15,7 +15,7 @@ namespace BudgetPlanner.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.4");
+            modelBuilder.HasAnnotation("ProductVersion", "9.0.9");
 
             modelBuilder.Entity("BudgetPlanner.Backend.Models.Category", b =>
                 {
@@ -72,7 +72,7 @@ namespace BudgetPlanner.Migrations
                     b.Property<DateTime>("ExpirationDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<bool>("Ispaid")
+                    b.Property<bool>("IsPaid")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("RecurrTypeId")
@@ -153,11 +153,9 @@ namespace BudgetPlanner.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Password")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Username")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("UserId");

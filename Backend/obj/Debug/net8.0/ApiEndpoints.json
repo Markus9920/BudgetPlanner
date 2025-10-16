@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ContainingType": "BudgetPlanner.Backend.Controllers.ExpenseController",
+    "Method": "AddExpense",
+    "RelativePath": "api/Expense/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

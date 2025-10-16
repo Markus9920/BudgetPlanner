@@ -1,9 +1,9 @@
 
 
+using BudgetPlanner.Backend.Database;
+using BudgetPlanner.Backend.Service;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
-
-using BudgetPlanner.Backend.Database;
 
 
 
@@ -16,7 +16,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=Database/database.db"));
 
 // Add services to the container.
-
+builder.Services.AddScoped<ExpenseService>();
 builder.Services.AddControllers();
 //swagger
 builder.Services.AddEndpointsApiExplorer();
