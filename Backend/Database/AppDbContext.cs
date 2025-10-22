@@ -38,21 +38,37 @@ namespace BudgetPlanner.Backend.Database
         {
             base.OnModelCreating(modelBuilder);
 
-            //Seed data for RecurringTypes table
-            modelBuilder.Entity<RecurrType>().HasData(
-                new RecurrType(1, "Once"),
-                new RecurrType(2, "Monthly"),
-                new RecurrType(3, "Yearly")
-                );
-
             //Seed data for Categories table
             modelBuilder.Entity<Category>().HasData(
                 new Category(1, "Category1"),
                 new Category(2, "Category2"),
                 new Category(3, "Category3"),
                 new Category(4, "Category4")
-
             );
+
+            modelBuilder.Entity<Category>()
+                .HasIndex(c => c.Name)
+                .IsUnique();
+
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.Username)
+                .IsUnique();
+
+            modelBuilder.Entity<Expense>()
+                .HasOne(e => e.User)
+                .WithMany(u => u.Expenses)
+                .HasForeignKey(e => e.UserId)
+                .OnDelete(DeleteBehavior.Cascade); //When user is deleted, all their expenses are deleted too
+
+            modelBuilder.Entity<Expense>()
+                .HasOne(e => e.Category)
+                .WithMany()
+                .HasForeignKey(e => e.CategoryId)
+                .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<Expense>()
+                .Property(e => e.RecurrType)
+                .HasConversion<int>();
         }
     }
 }

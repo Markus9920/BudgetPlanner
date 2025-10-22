@@ -1,7 +1,10 @@
 
 
 using BudgetPlanner.Backend.Database;
+using BudgetPlanner.Backend.Models;
 using BudgetPlanner.Backend.Service;
+using BudgetPlanner.Backend.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
@@ -17,6 +20,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Add services to the container.
 builder.Services.AddScoped<ExpenseService>();
+builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
+builder.Services.AddScoped<UserService>();
 builder.Services.AddControllers();
 //swagger
 builder.Services.AddEndpointsApiExplorer();

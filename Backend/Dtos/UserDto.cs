@@ -1,4 +1,6 @@
-﻿namespace BudgetPlanner.Dtos
+﻿
+
+namespace BudgetPlanner.Dtos
 {
     public class UserDto
     {

@@ -2,11 +2,49 @@
   {
     "ContainingType": "BudgetPlanner.Backend.Controllers.ExpenseController",
     "Method": "AddExpense",
-    "RelativePath": "api/Expense/add",
+    "RelativePath": "api/Expense/add-expense",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "expense",
+        "Type": "BudgetPlanner.Backend.Models.Expense",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BudgetPlanner.Backend.Controllers.UserContoller",
+    "Method": "GetById",
+    "RelativePath": "api/UserContoller/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BudgetPlanner.Backend.Controllers.UserContoller",
+    "Method": "CreateUser",
+    "RelativePath": "api/UserContoller/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BudgetPlanner.Dtos.UserDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

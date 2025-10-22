@@ -1,7 +1,6 @@
-
-
-
-
+using BudgetPlanner.Dtos;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace BudgetPlanner.Backend.Models
 {
@@ -15,17 +14,25 @@ namespace BudgetPlanner.Backend.Models
         public string Password { get; private set; }
 
 
+        public List<Expense> Expenses { get; set; } = new();
+
         public User() //For EF Core
         {
             Username = string.Empty;
             Password = string.Empty;
         } 
 
-        public User(int userId, string password, string username)
+        public User(string passwordHash, string username)
         {
-            UserId = userId;
-            Password = password;
+            Password = passwordHash;
             Username = username;
+        }
+
+        public void SetPasswordHash(string passwordHash) => Password = passwordHash;
+
+        public static implicit operator User?(UserResponseDto? v)
+        {
+        throw new NotImplementedException();
         }
     }
 }

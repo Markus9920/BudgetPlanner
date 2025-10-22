@@ -1,27 +1,60 @@
 ﻿using BudgetPlanner.Backend.Database;
-using BudgetPlanner.Backend.Dtos;
 using BudgetPlanner.Backend.Interfaces;
 using BudgetPlanner.Backend.Models;
-using System.Threading.Tasks;
+using BudgetPlanner.Dtos;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
+
 
 namespace BudgetPlanner.Backend.Services
 {
     public class UserService : IUserService
     {
         private readonly AppDbContext _context;
-        public UserService(AppDbContext context)
+
+        private readonly IPasswordHasher<User> _passwordHasher;
+        public UserService(AppDbContext context, IPasswordHasher<User> passwordHasher)
         {
             _context = context;
+            _passwordHasher = passwordHasher;
         }
-        public async Task CreateUser()
+        public async Task<int> CreateUserAsync(UserDto dto)
         {
-            await _context.Users.AddAsync(); //pitää käyttää DTO
+            if (string.IsNullOrWhiteSpace(dto.Username) || string.IsNullOrWhiteSpace(dto.Password))
+                throw new ArgumentException("Username and password cannot be empty");
+
+            if (await _context.Users.AnyAsync(u => u.Username == dto.Username))
+                throw new InvalidOperationException("Username already exists");
+
+            User user = new User { Username = dto.Username };
+
+            string hash = _passwordHasher.HashPassword(user, dto.Password);
+            user.SetPasswordHash(hash);
+
+            await _context.AddAsync(user);
             await _context.SaveChangesAsync();
+
+            return user.UserId;
         }
-        public async Task DeleteUser(User user)
+
+        public async Task DeleteUser(int userId)
         {
         }
-        
+
+        public async Task<UserResponseDto?> GetByIdAsync(int id)
+        {
+            return await _context.Users
+                .AsNoTracking()
+                .Where(u => u.UserId == id)
+                .Select(u => new UserResponseDto
+                {
+                    UserId = u.UserId,
+                    Username = u.Username
+                })
+                .FirstOrDefaultAsync();
+        }
+
         public async Task Login(/*LoginDto dto*/)
         {
         }
