@@ -33,7 +33,13 @@ namespace BudgetPlanner.Backend.Controllers
             int id = await _userService.CreateUserAsync(dto);
             return CreatedAtAction(nameof(GetById), new { id }, new { id, username = dto.Username });
         }
-
+        
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginDto dto)
+        {
+            int? id = await _userService.VerifyPasswordAsync(dto);
+            return id == null ? Unauthorized() : Ok(id);
+        }
     }
 }
 

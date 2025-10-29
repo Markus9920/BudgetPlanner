@@ -10,8 +10,8 @@ namespace BudgetPlanner.Backend.Interfaces
 
         Task<UserResponseDto?> GetByIdAsync(int id);
 
-        Task DeleteUser(int userId);
+        Task DeleteUserAsync(int userId);
 
-        Task Login(/*LoginDto dto*/);
+        Task<int?> VerifyPasswordAsync(LoginDto dto);
     }
 }

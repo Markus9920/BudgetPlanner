@@ -158,4 +158,3 @@ D:\GitHub\BudgetPlanner\Backend\obj\Debug\net8.0\refint\BudgetPlanner.dll
 D:\GitHub\BudgetPlanner\Backend\obj\Debug\net8.0\BudgetPlanner.pdb
 D:\GitHub\BudgetPlanner\Backend\obj\Debug\net8.0\BudgetPlanner.genruntimeconfig.cache
 D:\GitHub\BudgetPlanner\Backend\obj\Debug\net8.0\ref\BudgetPlanner.dll
-D:\GitHub\BudgetPlanner\Backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

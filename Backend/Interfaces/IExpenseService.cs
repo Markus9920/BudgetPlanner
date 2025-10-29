@@ -7,17 +7,17 @@ namespace BudgetPlanner.Backend.Interfaces
 {
     public interface IExpenseService
     {
-        Task AddExpense(Expense expense);
-        Task DeleteExpense(int  expenseId);
-        Task UpdateExpense(NewExpenseDto dto);
-        Task SetPaid(int expenseId);
-        Task SetUnpaid(int expenseId);
+        Task AddExpenseAsync(Expense expense);
+        Task DeleteExpenseAsync(int  expenseId);
+        Task UpdateExpenseAsync(NewExpenseDto dto);
+        Task SetPaidAsync(int expenseId);
+        Task SetUnpaidAsync(int expenseId);
 
-        public IEnumerable<Expense> GetAllExpenses(int userId);
-        public IEnumerable<Expense> GetPaidExpenses(int userId);
-        public IEnumerable<Expense> GetUnpaidExpenses(int userId);
-        public IEnumerable<Expense> GetRecurringExpenses(int userId);
-        public IEnumerable<Expense> GetNonRecurringExpenses(int userId);
+        public IEnumerable<Expense> GetAllExpensesAsync(int userId);
+        public IEnumerable<Expense> GetPaidExpensesAsync(int userId);
+        public IEnumerable<Expense> GetUnpaidExpensesAsync(int userId);
+        public IEnumerable<Expense> GetRecurringExpensesAsync(int userId);
+        public IEnumerable<Expense> GetNonRecurringExpensesAsync(int userId);
 
     }
 }

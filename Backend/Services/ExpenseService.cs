@@ -14,52 +14,52 @@ namespace BudgetPlanner.Backend.Service
             _context = context;
         }
 
-        public async Task AddExpense(Expense expense)
+        public async Task AddExpenseAsync(Expense expense)
         {
             await _context.Expenses.AddAsync(expense);
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteExpense(int expenseId)
+        public async Task DeleteExpenseAsync(int expenseId)
         {
               
         }
 
-        public async Task UpdateExpense(NewExpenseDto dto)
+        public async Task UpdateExpenseAsync(NewExpenseDto dto)
         {
             
         }
 
-        public async Task SetPaid(int expenseId)
+        public async Task SetPaidAsync(int expenseId)
         {
             
         }
-        public async Task SetUnpaid(int expenseId)
+        public async Task SetUnpaidAsync(int expenseId)
         {
              
         }
 
-        public IEnumerable<Expense> GetAllExpenses(int userId)
+        public IEnumerable<Expense> GetAllExpensesAsync(int userId)
         {
             return Enumerable.Empty<Expense>();
         }
 
-        public IEnumerable<Expense> GetPaidExpenses(int userId)
+        public IEnumerable<Expense> GetPaidExpensesAsync(int userId)
         {
             return Enumerable.Empty<Expense>();
         }
 
-        public IEnumerable<Expense> GetUnpaidExpenses(int userId)
+        public IEnumerable<Expense> GetUnpaidExpensesAsync(int userId)
         {
             return Enumerable.Empty<Expense>();
         }
 
-        public IEnumerable<Expense> GetRecurringExpenses(int userId)
+        public IEnumerable<Expense> GetRecurringExpensesAsync(int userId)
         {
             return Enumerable.Empty<Expense>();
         }
 
-        public IEnumerable<Expense> GetNonRecurringExpenses(int userId)
+        public IEnumerable<Expense> GetNonRecurringExpensesAsync(int userId)
         {
             return Enumerable.Empty<Expense>();
         }

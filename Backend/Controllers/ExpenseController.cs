@@ -18,7 +18,7 @@ namespace BudgetPlanner.Backend.Controllers
         [HttpPost("add-expense")]
         public async Task<IActionResult> AddExpense(Expense expense) // pitää käyttää DTO
         {
-            await _expenseService.AddExpense(expense);
+            await _expenseService.AddExpenseAsync(expense);
             return Ok("Lisäys onnistui!");
         }
 
