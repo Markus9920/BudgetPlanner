@@ -4,7 +4,7 @@ using BudgetPlanner.Backend.Interfaces;
 using BudgetPlanner.Backend.Models;
 using System.Threading.Tasks;
 
-namespace BudgetPlanner.Backend.Service
+namespace BudgetPlanner.Backend.Services
 {
     public class ExpenseService : IExpenseService
     {

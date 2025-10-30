@@ -1,7 +1,7 @@
 ﻿using BudgetPlanner.Backend.Models;
-using BudgetPlanner.Backend.Service;
+using BudgetPlanner.Backend.Services;
 using Microsoft.AspNetCore.Mvc;
-
+using BudgetPlanner.Backend.Database;
 namespace BudgetPlanner.Backend.Controllers
 {
     [ApiController]

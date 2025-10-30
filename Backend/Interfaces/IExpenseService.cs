@@ -1,7 +1,6 @@
 
 using BudgetPlanner.Backend.Dtos;
 using BudgetPlanner.Backend.Models;
-using System.Threading.Tasks;
 
 namespace BudgetPlanner.Backend.Interfaces
 {

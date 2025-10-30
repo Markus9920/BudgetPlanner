@@ -5,6 +5,7 @@ D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\BudgetPlanner.runtimeconfig.jso
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\BudgetPlanner.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\BudgetPlanner.pdb
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Humanizer.dll
+D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.Build.Locator.dll
@@ -30,6 +31,12 @@ D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dl
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\Mono.TextTemplating.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
@@ -45,6 +52,7 @@ D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\System.Composition.Hosting.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\System.Composition.Runtime.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\System.Composition.TypedParts.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\System.IO.Pipelines.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\System.Text.Json.dll
@@ -158,3 +166,4 @@ D:\GitHub\BudgetPlanner\Backend\obj\Debug\net8.0\refint\BudgetPlanner.dll
 D:\GitHub\BudgetPlanner\Backend\obj\Debug\net8.0\BudgetPlanner.pdb
 D:\GitHub\BudgetPlanner\Backend\obj\Debug\net8.0\BudgetPlanner.genruntimeconfig.cache
 D:\GitHub\BudgetPlanner\Backend\obj\Debug\net8.0\ref\BudgetPlanner.dll
+D:\GitHub\BudgetPlanner\Backend\bin\Debug\net8.0\appsettings.json

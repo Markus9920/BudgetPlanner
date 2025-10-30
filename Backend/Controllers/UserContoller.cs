@@ -13,17 +13,18 @@ namespace BudgetPlanner.Backend.Controllers
     {
         private readonly UserService _userService;
         private readonly AppDbContext _context;
-        public UserContoller(UserService userService, AppDbContext context)
+        private readonly TokenService _tokenService;
+        public UserContoller(UserService userService, AppDbContext context, TokenService tokenService)
         {
             _userService = userService;
             _context = context;
-
+            _tokenService = tokenService;
         }
 
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById(int id)
         {
-            User? user = await _userService.GetByIdAsync(id);
+            var user = await _userService.GetByIdAsync(id);
             return user == null ? NotFound() : Ok(user);
         }
 
@@ -38,7 +39,13 @@ namespace BudgetPlanner.Backend.Controllers
         public async Task<IActionResult> Login([FromBody] LoginDto dto)
         {
             int? id = await _userService.VerifyPasswordAsync(dto);
-            return id == null ? Unauthorized() : Ok(id);
+            if (id == null)
+                return Unauthorized();
+
+            var user = await _userService.GetByIdAsync(id.Value);
+            var token = _tokenService.CreateAccessToken(id.Value, user!.Username);
+
+            return Ok(new { AccessToken = token });  
         }
     }
 }
