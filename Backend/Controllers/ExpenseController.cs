@@ -2,6 +2,7 @@
 using BudgetPlanner.Backend.Services;
 using Microsoft.AspNetCore.Mvc;
 using BudgetPlanner.Backend.Database;
+using BudgetPlanner.Backend.Interfaces;
 namespace BudgetPlanner.Backend.Controllers
 {
     [ApiController]
@@ -9,7 +10,7 @@ namespace BudgetPlanner.Backend.Controllers
 
     public class ExpenseController : ControllerBase
     {
-        private readonly ExpenseService _expenseService;
+        private readonly IExpenseService _expenseService;
         public ExpenseController(ExpenseService expenseService)
         {
             _expenseService = expenseService;

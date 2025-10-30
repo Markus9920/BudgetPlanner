@@ -3,6 +3,7 @@ using BudgetPlanner.Backend.Models;
 using BudgetPlanner.Backend.Services;
 using BudgetPlanner.Dtos;
 using Microsoft.AspNetCore.Mvc;
+using BudgetPlanner.Backend.Interfaces;
 
 namespace BudgetPlanner.Backend.Controllers
 {
@@ -11,10 +12,10 @@ namespace BudgetPlanner.Backend.Controllers
 
     public class UserContoller : ControllerBase
     {
-        private readonly UserService _userService;
+        private readonly IUserService _userService;
         private readonly AppDbContext _context;
-        private readonly TokenService _tokenService;
-        public UserContoller(UserService userService, AppDbContext context, TokenService tokenService)
+        private readonly ITokenService _tokenService;
+        public UserContoller(IUserService userService, AppDbContext context, ITokenService tokenService)
         {
             _userService = userService;
             _context = context;

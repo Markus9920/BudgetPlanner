@@ -21,10 +21,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Default")));
 
 // Add services to the container.
-builder.Services.AddScoped<ExpenseService>();
+builder.Services.AddScoped<IExpenseService, ExpenseService>();
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
-builder.Services.AddScoped<UserService>();
-builder.Services.AddScoped<TokenService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddControllers();
 
 //swagger
